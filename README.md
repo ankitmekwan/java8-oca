@@ -5,3 +5,4 @@ Practicing for Java 8 OCA Exam
 - lambdas
 - date/time
 - default interface methods
+- static interface methods

@@ -1,5 +1,9 @@
 import java.time.*;
 
+/*
+ * Illustrates simple usage of the new date and time objects
+ * introduced in Java 8
+ */
 public class DatePractice {
 
     public static void main(String [] args) {

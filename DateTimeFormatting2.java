@@ -40,6 +40,9 @@ public class DateTimeFormatting2 {
     }
 
     public static void printParsedDates() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd yyyy");
+        LocalDate date1 = LocalDate.parse("March 12 1986", formatter);
+        System.out.println(date1);
 
     }
 }

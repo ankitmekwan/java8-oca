@@ -42,7 +42,11 @@ public class DateTimeFormatting2 {
     public static void printParsedDates() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd yyyy");
         LocalDate date1 = LocalDate.parse("March 12 1986", formatter);
+        LocalDate date2 = LocalDate.parse("2008-09-13"); //Default format for dates
+        LocalTime time1 = LocalTime.parse("11:27");      //Default format for time
         System.out.println(date1);
+        System.out.println(date2);
+        System.out.println(time1);
 
     }
 }

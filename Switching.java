@@ -17,5 +17,12 @@ public class Switching {
             case 'b': System.out.println("b");
                       break;
         }
+
+        //This will print nothing since there is no match and no default case
+        switch(a) {
+            case 'a': System.out.println("a");
+            case 'b': System.out.println("b");
+                      break;
+        }
     }
 }

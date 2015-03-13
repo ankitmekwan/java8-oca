@@ -16,6 +16,7 @@ interface Animal {
 
 interface HungryAnimal extends Animal {
 
+    //Still needs the default keyword to override correctly
     public default void eat() {
         System.out.println("Animal is hungrily eating");
     }

@@ -13,6 +13,9 @@ interface Test2 {
     int value = 1;
     public static final int value2 = 2;
     public final static int value3 = 3;
+    public default int getNum() {
+        return 8;
+    }
 }
 
 class InterfaceVariables implements Test, Test2 {

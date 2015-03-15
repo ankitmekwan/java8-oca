@@ -1,3 +1,7 @@
+/*
+ * Example of defining interface constant
+ * - are assumed to be public static final
+ */
 interface Test {
     int onlyInTest = 1;
     int value = 1;

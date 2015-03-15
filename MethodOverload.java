@@ -1,5 +1,7 @@
 /* Example showing that primitives and their corresponding wrapper classes to not
  * cause a compilation error because of duplicate signatures
+ *
+ * This is not the case with Arrays/Varargs
  */
 public class MethodOverload {
     public static void main(String [] args) {
@@ -20,4 +22,16 @@ public class MethodOverload {
     public void print(byte b) {
         System.out.println("byte called");
     }
+
+    public void print(int[] arr) {
+        System.out.println("Array");
+    }
+
+    //This WONT COMPILE because of the method that takes
+    //an int array. According to java, they have the same param list and name
+    /*
+    public void print(int... nums) {
+        System.out.println("Varargs");
+    }
+    */
 }

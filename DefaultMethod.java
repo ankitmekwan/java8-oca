@@ -22,6 +22,13 @@ interface HungryAnimal extends Animal {
     }
 }
 
+interface CrazyAnimal extends Animal {
+    //Here we are redeclaring the previously default method as abstract,
+    //so implementors of CrazyAnimal HAVE to define the method
+    public void eat();
+}
+
+
 public class DefaultMethod implements Animal {
 
     public static void main(String [] args) {
@@ -47,4 +54,11 @@ class OtherAnimal implements HungryAnimal {
     public void walk() {}
     public void run() {}
 
+}
+
+class MentalAnimal implements CrazyAnimal {
+    public void eat() {}
+    public void walk() {}
+    ; //random semicolon here doesn't hurt? weird
+    public void run() {}
 }

@@ -4,9 +4,9 @@
  */
 class Parent {
 
-    public static void test() {
+    public static void test() { }
 
-    }
+    public final static void done() {}
 
     public static void main(String [] args) {
 
@@ -30,4 +30,9 @@ class OtherChild extends Parent {
 
 class AnotherOtherChild extends Parent {
     //public static int test() {return 1;}//  WONT COMPILE because parent method has return type void
+}
+
+class FinalChild extends Parent {
+   // public static void done() {} WONT COMPILE because parent method is final
+
 }

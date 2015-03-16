@@ -28,6 +28,7 @@ public class DatePractice {
         LocalDate date3 = LocalDate.of(2006, 4, 8);
         System.out.println(date3);
 
+
     }
 
     public static void printTime() {

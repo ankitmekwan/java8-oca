@@ -42,5 +42,8 @@ public class LearningLists {
 
         System.out.println(makes.toArray(new String [0] ));
 
+        makes.remove(0);
+        System.out.println(makes);
+
     }
 }

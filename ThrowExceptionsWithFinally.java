@@ -1,10 +1,13 @@
-public class ThrowExceptions {
+public class ThrowExceptionsWithFinally {
     public static void main(String [] args) {
-        toss();
         try {
             tossHard();
         }
-        catch (Exception e) {}
+        catch (Exception e) {
+            System.out.println("Inside the catch block");
+        }
+
+        System.out.println("Done with main");
     }
 
     public static void toss() { // NO need to declare exception because it throws a RuntimeException

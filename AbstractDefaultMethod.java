@@ -21,8 +21,8 @@ public abstract class AbstractDefaultMethod implements Bird, Plane  {
     }
 
     // This class MUST define the fly class to resolve the ambiguity
-    // of which method to implement, given that both interfaces use the same method signature
-    // even though it is abstract!
+    // of which method to implement, given that both interfaces use the same method signature.
+    // This is true even though this class is abstract!
     public int fly() {return 0;}
 }
 

@@ -12,6 +12,5 @@ class Koala implements CanClimb, HasClaws {
         Runnable c = (Runnable) canClimb; //WTF Why does this compile?!
         System.out.println(canClimb.maxHeight());
         System.out.println(hasClaws.isSharp());
-
     }
 }

@@ -1,5 +1,5 @@
 /*
- * Examples of default methods
+ * Examples of default methods on interfaces
  */
 interface Animal {
     //Notice use of the default keyword
@@ -7,7 +7,7 @@ interface Animal {
         System.out.println("Animal eating");
     }
 
-    public void run();
+    public void run(); //Standard interface method with no implementation
 
     //This is a PUBLIC method even though it looks like it is package access
     //ALL methods on an interface are public
@@ -16,7 +16,8 @@ interface Animal {
 
 interface HungryAnimal extends Animal {
 
-    //Still needs the default keyword to override correctly
+    //Here the sub-interface can override its parent's method
+    //still needs the default keyword to override correctly
     public default void eat() {
         System.out.println("Animal is hungrily eating");
     }
@@ -59,6 +60,7 @@ class OtherAnimal implements HungryAnimal {
 class MentalAnimal implements CrazyAnimal {
     public void eat() {}
     public void walk() {}
+    ; //random semicolon here doesn't hurt? weird
     ; //random semicolon here doesn't hurt? weird
     public void run() {}
 }

@@ -10,13 +10,12 @@ public class Imports {
 
     public static void main(String[] args) {
         //Date d = new Date(); //WILL NOT COMPILE WITH THIS STATEMENT, Date is ambiguous
-		arrayFun();
+	arrayFun();
     }
-
-	public static void arrayFun() {
-		List<Integer>nums = asList(1,2,3);
-		for (int i : nums) {
-			out.println(i);
-		}
+    public static void arrayFun() {
+	List<Integer>nums = asList(1,2,3);
+	for (int i : nums) {
+		out.println(i);
 	}
+    }
 }

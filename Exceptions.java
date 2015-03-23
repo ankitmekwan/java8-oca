@@ -1,9 +1,13 @@
+/*
+ * Examples of Exceptions
+ */
 public class Exceptions {
 
     public static void main(String [] args) {
         System.out.println("a");
         try {
             System.out.println("b");
+            noException();
             e();
         }
         finally {
@@ -12,7 +16,11 @@ public class Exceptions {
         System.out.println("d");
     }
 
+   public static void noException() {}{
+       System.out.println("No exception thrown here");
+   }
+
     public static void e() {
-        //throw new RuntimeException();
+        throw new RuntimeException();
     }
 }

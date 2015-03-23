@@ -45,5 +45,22 @@ public class LearningLists {
         makes.remove(0);
         System.out.println(makes);
 
+        arrayBackedList();
+
+    }
+
+    /*
+     * Example of an array-backed list
+     */
+    public static void arrayBackedList() {
+        int [] back = new int[10];
+        List list = Arrays.asList(back);
+        System.out.println(list.toArray());
+
+        //This will throw an exception because it's an array-backed list
+        //which means that elements can be set, but the length of the array
+        //cannot be changed (elements added or removed)
+        list.add(2);
+
     }
 }
